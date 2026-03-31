@@ -1,54 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>LinkedIn Clone</title>
-  <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LinkedIn Clone</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-  <div class="logo">
-    <span class="linkedin">Linked</span><span class="in">in</span>
-  </div>
+<header>
 
-  <div class="container">
-    <h2>Join LinkedIn now — it’s free!</h2>
+  <div class="left">
+    <img width="45px" src="image/logo.png" alt="">
 
-    <div class="card">
-      <label>Email</label>
-      <input type="text">
-
-      <label>Password</label>
-      <div class="password-box">
-        <input type="password">
-        <span>Show</span>
-      </div>
-
-      <div class="remember">
-        <input type="checkbox" checked>
-        <span>Remember me</span>
-      </div>
-
-      <p class="terms">
-        By clicking Agree & Join or Continue, you agree to the LinkedIn 
-        User Agreement, Privacy Policy, and Cookie Policy.
-      </p>
-
-      <button class="btn-primary">Agree & Join</button>
-
-      <div class="divider">or</div>
-
-      <button class="btn-google">
-  <img src="image/google.png">
-  Continue with Google
-</button>
-
-<button class="btn-microsoft">
-  <img src="image/microsoft.png">
-  Continue with Microsoft
-</button>
+    <div class="search">
+      <i class="bi bi-search"></i>
+      <input type="text" placeholder="Search">
     </div>
   </div>
+
+  <ul class="nav">
+
+    <li class="active"><i class="bi bi-house-door-fill" style="font-size: 20px;" ></i><span>Home</span></li>
+    <li><i class="bi bi-people"style="font-size: 20px;"></i><span>My Network</span></li>
+    <li><i class="bi bi-briefcase" style="font-size: 20px;"></i><span>Jobs</span></li>
+    <li><i class="bi bi-chat-dots" style="font-size: 20px;"></i><span>Messaging</span></li>
+    <li><i class="bi bi-bell" style="font-size: 20px;"></i><span>Notifications</span></li>
+
+    <li>
+      <img src="https://randomuser.me/api/portraits/men/75.jpg">
+      <span>Me</span>
+    </li>
+
+    <li class="divider"></li>
+
+    <li>
+      <i class="bi bi-grid-3x3-gap" style="font-size: 20px;"></i>
+      <span>For Business</span>
+    </li>
+
+    <li class="premium-text">
+      <i class="bi bi-star-fill"></i><span>Try Premium</span>
+    </li>
+
+  </ul>
+
+</header>
+
+<main>
+
+
+  <div class="left-sidebar">
+
+    <div class="card profile">
+      <div class="cover"><img src="image/sidebar.jfif" alt=""></div>
+      <div class="MY img"><img  src="image/profile.jfif"></div>
+      <h3 class="h3">Huzafa Kareem</h3>
+      <p class="p">Modern Web Development<br> Student at SMIT Future Full Stack Developer</p>
+      <span class="span">Karachi Division, Sindh</span>
+
+      <button class="exp">+ Experience</button>
+    </div>
+
+    <div class="card small">
+      <p>Stand out for 2x as many opportunities</p>
+      <button class="premium-btn">Try Premium for Rs 0</button>
+    </div>
+
+    <div class="card small">
+      <div class="row">
+        <span>Connections</span>
+        <b>2</b>
+      </div>
+      <p class="link">Grow your network</p>
+    </div>
+
+    <div class="card small links">
+      <p>Saved items</p>
+      <p>Groups</p>
+      <p>Newsletters</p>
+      <p>Events</p>
+    </div>
+
+  </div>
+
+
+  <div class="feed">
+
+    <div class="post-box">
+      <img src="https://randomuser.me/api/portraits/men/75.jpg">
+      <input placeholder="Start a post">
+    </div>
+
+    <div class="post">
+
+      <div class="post-top">
+        <img class="Abc" src="https://randomuser.me/api/portraits/men/32.jpg">
+        <div>
+          <h4>Muhammad Abdullah</h4>
+          <span>2d</span>
+        </div>
+      </div>
+
+      <p>I built a Real-time AI Hand Gesture Drawing Tool...</p>
+
+      <img src="image/post.png" width="100px" height="400px">
+
+      <div class="post-actions">
+        <button><i class="bi bi-hand-thumbs-up"></i> Like</button>
+        <button><i class="bi bi-chat"></i> Comment</button>
+        <button><i class="bi bi-arrow-repeat"></i> Share</button>
+        <button><i class="bi bi-send"></i> Send</button>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- RIGHT SIDEBAR -->
+  <div class="right-sidebar">
+
+    <div class="card">
+      <h4>Add to your feed</h4>
+
+      <div class="user">
+        <img src="https://randomuser.me/api/portraits/men/45.jpg">
+        <div><p>Jaffar Aman</p></div>
+        <button>Follow</button>
+      </div>
+
+      <div class="user">
+        <img src="https://randomuser.me/api/portraits/men/12.jpg">
+        <div><p>Zeeshan</p></div>
+        <button>Follow</button>
+      </div>
+
+    </div>
+
+  </div>
+
+</main>
 
 </body>
 </html>
